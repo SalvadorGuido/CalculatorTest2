@@ -1,4 +1,3 @@
-#!/bin/sh
 # Simple add and subtract operations
 
 import fileinput
@@ -22,3 +21,5 @@ for line in fileinput.input():
     b = int(b)
     c = a+b
     print(c)
+
+#
