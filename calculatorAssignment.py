@@ -8,12 +8,13 @@ for line in fileinput.input():
     a = ''
     b = ''
     while line[i] != " ":
-        a += str(line[i])
+        a += line[i]
         i += 1
     i += 1
     while line[i] != "\n":
-        b += str(line[i])
+        b += line[i]
         i += 1
+
     i = 0
     a = int(a)
     b = int(b)
