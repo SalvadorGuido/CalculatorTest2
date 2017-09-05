@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/bin/sh
 # Simple add and subtract operations
 
 import fileinput
