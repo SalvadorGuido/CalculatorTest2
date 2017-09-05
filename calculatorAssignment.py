@@ -1,6 +1,21 @@
-#Simple add and subtract operations
-a = int(input())
-b = int(input())
-c = a + b
+# Simple add and subtract operations
+import fileinput
 
-print(c)
+lines = []
+i = 0
+
+for line in fileinput.input():
+    a = ''
+    b = ''
+    while line[i] != " ":
+        a += str(line[i])
+        i += 1
+    i += 1
+    while line[i] != "\n":
+        b += str(line[i])
+        i += 1
+    i = 0
+    a = int(a)
+    b = int(b)
+    c = a+b
+    print(c)
