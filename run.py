@@ -1,10 +1,9 @@
+#!/bin/sh
 # Simple add and subtract operations
 
 import fileinput
 
-lines = []
 i = 0
-
 for line in fileinput.input():
     a = ''
     b = ''
@@ -21,5 +20,3 @@ for line in fileinput.input():
     b = int(b)
     c = a+b
     print(c)
-
-#
